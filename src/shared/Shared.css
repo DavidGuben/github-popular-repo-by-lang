@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    color: blue;
+}
+
+.list-item{
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+}
+
+ul {
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
