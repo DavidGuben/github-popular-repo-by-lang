@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './Shared.css'
+
 class Grid extends Component {
   constructor(props) {
     super(props)
@@ -42,7 +44,7 @@ class Grid extends Component {
     const { loading, repos } = this.state
 
     if (loading === true) {
-      return <p>LOADING</p>
+      return <p className="home">LOADING</p>
     }
 
     return (
