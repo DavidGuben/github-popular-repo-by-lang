@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 import './Shared.css'
 
 class Grid extends Component {
@@ -40,21 +41,32 @@ class Grid extends Component {
         loading: false,
       })))
   }
+
   render() {
     const { loading, repos } = this.state
 
     if (loading === true) {
-      return <p className="home">LOADING</p>
+      return (
+        <div className="load-wrapp">
+        <div className="load-3">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
+    </div>
+        
+      )
     }
 
     return (
-      <ul style={{display: 'flex', flexWrap: 'wrap'}}>
+      <ul 
+      style={{display: 'flex', flexWrap: 'wrap'}}>
         {repos.map(({ name, owner, stargazers_count, html_url }) => (
-          <li key={name} style={{margin: 30}}>
+          <li key={name} className="lang-card">
             <ul>
-              <li><a href={html_url}>{name}</a></li>
-              <li>@{owner.login}</li>
-              <li>{stargazers_count} stars</li>
+              <li><a href={html_url} target="_blank">{name}</a></li>
+              <li className="owner">@{owner.login}</li>
+              <li className="stars">{stargazers_count} stars</li>
             </ul>
           </li>
         ))}
