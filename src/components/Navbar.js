@@ -1,9 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {Navbar} from 'mdbreact'
+import {Animation} from 'mdbreact'
 
 import './Shared.css'
 
-export default function Navbar () {
+export default function Nav () {
+
   const languages = [{
     name: 'All',
     param: 'all'
@@ -22,14 +25,18 @@ export default function Navbar () {
   }]
 
   return (
-    <ul className="list">
+    <Navbar className="navbar" expand="md" scrolling>
       {languages.map(({ name, param }) => (
-        <li key={param} className="list-item">
-          <NavLink activeStyle={{fontWeight: 'bold'}} to={`/popular/${param}`}>
+        <li key={param} className="nav-item">
+        <Animation type="fadeIn">
+          <NavLink activeStyle={{fontWeight: 'bold'}} to=
+          {`/popular/${param}`}>
             {name}
           </NavLink>
+        </Animation> 
         </li>
       ))}
-    </ul>
+    </Navbar>
+    
   )
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
+    "mdbreact": "^4.7.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",

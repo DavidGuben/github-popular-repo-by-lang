@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Animation } from 'mdbreact'
 
 import './Shared.css'
 
@@ -59,8 +59,10 @@ class Grid extends Component {
     }
 
     return (
+      <Animation type="bounceInRight">
+      <div className="card-view">
       <ul 
-      style={{display: 'flex', flexWrap: 'wrap'}}>
+      style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
         {repos.map(({ name, owner, stargazers_count, html_url }) => (
           <li key={name} className="lang-card">
             <ul>
@@ -71,6 +73,8 @@ class Grid extends Component {
           </li>
         ))}
       </ul>
+      </div>
+      </Animation>
     )
   }
 }
