@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {Navbar} from 'mdbreact'
 import {Animation} from 'mdbreact'
+import githubLogo from './../imgs/github.svg'
+import home from './../imgs/home.svg'
 
 import './Shared.css'
 
@@ -26,16 +28,43 @@ export default function Nav () {
 
   return (
     <Navbar expand="md" scrolling>
-      {languages.map(({ name, param }) => (
-        <li key={param} className="nav-item">
-        <Animation type="fadeIn">
-          <NavLink activeStyle={{fontWeight: 'bold'}} to=
-          {`/popular/${param}`}>
-            {name}
-          </NavLink>
-        </Animation> 
-        </li>
-      ))}
+
+      <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+
+        <a href="https://github.com/DavidGuben/poprepo">
+        <img src={githubLogo}
+          style={{
+            width: 40, height: 40, 
+            paddingRight: 10, position: 'relative',
+            marginRight: 5
+            }}
+            alt="GitHub Logo" /></a>
+
+          <a href="http://davidguben.com">
+          <img src={home}
+          style={{
+            width: 40, height: 40, 
+            paddingRight: 5, position: 'relative',
+            }}
+            alt="DavidGuben.com" /></a>
+
+      </div>
+
+      <div>      
+        {languages.map(({ name, param }) => (
+          <li key={param} className="nav-item">
+          <Animation type="fadeIn">
+
+            <NavLink activeStyle={{fontWeight: 'bold'}} to=
+            {`/popular/${param}`}>
+              {name}
+            </NavLink>
+
+          </Animation> 
+          </li>
+        ))}
+      </div>
+
     </Navbar>
     
   )
