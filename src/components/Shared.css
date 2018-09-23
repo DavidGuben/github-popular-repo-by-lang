@@ -69,6 +69,10 @@ li {
     list-style: none;
 }
 
+.card-view {
+    margin-top: 40px;
+}
+
 .lang-card {
     color: rgb(27, 27, 27);
     background-color: #e8e8e8;
