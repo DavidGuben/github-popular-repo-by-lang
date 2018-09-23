@@ -62,7 +62,7 @@ class Grid extends Component {
       <Animation type="bounceInRight">
       <div className="card-view">
       <ul 
-      style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+      style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}} className="one-card">
         {repos.map(({ name, owner, stargazers_count, html_url }) => (
           <li key={name} className="lang-card">
             <ul>
