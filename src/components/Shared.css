@@ -36,6 +36,9 @@ ul ul a {
 
 .navbar {    
     background-color: #40798c !important;
+    text-align: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .owner {
@@ -56,7 +59,7 @@ ul ul a {
 .nav-item {
     font-size: 40px;
     display: inline-flex;
-    align-items: center;
+    text-align: center;
     padding: 20px;
 }
 

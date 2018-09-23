@@ -25,7 +25,7 @@ export default function Nav () {
   }]
 
   return (
-    <Navbar className="navbar" expand="md" scrolling>
+    <Navbar expand="md" scrolling>
       {languages.map(({ name, param }) => (
         <li key={param} className="nav-item">
         <Animation type="fadeIn">
