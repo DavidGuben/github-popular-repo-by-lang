@@ -74,6 +74,7 @@ class Grid extends Component {
         ))}
       </ul>
       </div>
+      
       </Animation>
     )
   }
