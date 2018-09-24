@@ -39,7 +39,7 @@ ul ul a {
     background-color: #40798c !important;
     display: flex !important;
     text-align: center;
-    justify-content: center !important;
+    justify-content: flex-end !important;
 }
 
 .owner {
@@ -127,7 +127,7 @@ li {
         flex-wrap: 'wrap';
         justify-content: 'center';
     }
-
+    
 }
 
 @media screen and (max-width: 997px) {
