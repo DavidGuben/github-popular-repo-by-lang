@@ -37,8 +37,8 @@ ul ul a {
 
 .navbar {    
     background-color: #40798c !important;
-    text-align: center;
     display: flex !important;
+    text-align: center;
     justify-content: center !important;
 }
 
@@ -60,7 +60,6 @@ ul ul a {
 .nav-item {
     font-size: 40px;
     display: inline-flex;
-    text-align: center;
     padding: 10px;
 }
 

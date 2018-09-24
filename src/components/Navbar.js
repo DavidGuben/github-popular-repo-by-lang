@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import {Navbar, NavLink, Animation, Collapse, NavbarToggler} from 'mdbreact'
+import { Navbar, NavLink, Animation, Collapse, NavbarToggler } from 'mdbreact'
 
 import githubLogo from './../imgs/github.svg'
 import home from './../imgs/home.svg'
@@ -46,14 +46,15 @@ class Nav extends Component {
       <Navbar expand="md" scrolling dark>
       { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } /> }
       <Collapse isOpen = { this.state.collapse } navbar>
-      <div>
+
+      <div style={{paddingTop: 10}}>
 
         <a href="https://github.com/DavidGuben/poprepo" target="_blank" rel="noopener noreferrer">
         <img src={githubLogo}
           style={{
             position: 'relative',
             width: 40, height: 40, 
-            paddingRight: 10,
+            paddingRight: 9,
             }}
             alt="GitHub Logo" /></a>
 
@@ -68,14 +69,16 @@ class Nav extends Component {
 
       </div>
 
-      <div>      
+      <div>
+
         {this.state.languages.map(({ name, param }) => (
           <li key={param} className="nav-item">
           <Animation type="fadeIn">
           
           
-            <NavLink activeStyle={{fontWeight: 'bold'}} to=
-            {`/popular/${param}`}>
+            <NavLink 
+            activeStyle={{}} 
+            to={`/popular/${param}`}>
               {name}
             </NavLink>
           
@@ -83,8 +86,10 @@ class Nav extends Component {
           </Animation> 
           </li>
         ))}
+
       </div>
-      </Collapse>
+
+    </Collapse>
     </Navbar>
     )
   }
