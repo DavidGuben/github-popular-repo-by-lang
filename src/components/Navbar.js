@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 
-import { Navbar, NavLink, Animation, Collapse, NavbarToggler } from 'mdbreact'
+import { Navbar, NavLink, Animation, Collapse, NavbarToggler, NavbarBrand } from 'mdbreact'
 
 import githubLogo from './../imgs/github.svg'
 import home from './../imgs/home.svg'
+import poprepoLogo from './../imgs/poprepo-wht.svg'
 
 import './App.css'
 
@@ -47,7 +48,7 @@ class Nav extends Component {
       { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } /> }
       <Collapse isOpen = { this.state.collapse } navbar>
 
-      <div style={{paddingTop: 10}}>
+      <div style={{paddingTop: 10, display: 'flex', flexDirection: 'column', justifyContent: 'center'}} className="git-icon-set">
 
         <a href="https://github.com/DavidGuben/poprepo" target="_blank" rel="noopener noreferrer">
         <img src={githubLogo}
@@ -68,7 +69,9 @@ class Nav extends Component {
             alt="DavidGuben.com" /></a>
 
       </div>
-
+      <NavbarBrand>
+          <img src={poprepoLogo} className="poprepo-logo" alt="PopRepo Logo" />
+        </NavbarBrand>
       <div>
 
         {this.state.languages.map(({ name, param }) => (

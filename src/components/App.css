@@ -28,6 +28,12 @@ ul ul a {
     color: #fff;
 }
 
+.poprepo-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+}
+
 .home {
     text-align: center;
     color: #e8e8e8;
@@ -127,11 +133,15 @@ li {
         flex-wrap: 'wrap';
         justify-content: 'center';
     }
-    
+
+    .git-icon-set {
+        flex-direction: row !important;
+    }
 }
 
 @media screen and (max-width: 997px) {
     .nav-item {
         font-size: 32px;
     }
+
 }
