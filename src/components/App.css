@@ -61,7 +61,7 @@ ul ul a {
     font-size: 40px;
     display: inline-flex;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 ul {
@@ -127,5 +127,12 @@ li {
         flex-direction: column;
         flex-wrap: 'wrap';
         justify-content: 'center';
+    }
+
+}
+
+@media screen and (max-width: 997px) {
+    .nav-item {
+        font-size: 32px;
     }
 }
