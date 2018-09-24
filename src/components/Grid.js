@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Animation } from 'mdbreact'
 
-import './Shared.css'
+import './App.css'
 
 class Grid extends Component {
   constructor(props) {

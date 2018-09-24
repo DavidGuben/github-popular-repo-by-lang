@@ -3,7 +3,7 @@ import githubLogo from './../imgs/github.svg'
 
 import { Animation } from 'mdbreact'
 
-import './Shared.css'
+import './App.css'
 
 export default function Home () {
   return (
