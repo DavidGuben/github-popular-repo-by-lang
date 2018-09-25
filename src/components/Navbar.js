@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
-import { Navbar, NavLink, Animation, Collapse, NavbarToggler, NavbarBrand } from 'mdbreact'
+import { Navbar, NavLink, Animation, Collapse, NavbarToggler, NavbarBrand } from 'mdbreact';
 
-import githubLogo from './../imgs/github.svg'
-import home from './../imgs/home.svg'
-import poprepoLogo from './../imgs/poprepo-wht.svg'
+import githubLogo from './../imgs/github.svg';
+import home from './../imgs/home.svg';
+import poprepoLogo from './../imgs/poprepo-wht.svg';
 
-import './App.css'
+import './App.css';
 
 
 class Nav extends Component {

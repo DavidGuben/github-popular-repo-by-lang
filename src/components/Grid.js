@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Animation } from 'mdbreact'
+import React, { Component } from 'react';
+import { Animation } from 'mdbreact';
 
-import './App.css'
+import './App.css';
 
 class Grid extends Component {
   constructor(props) {
@@ -60,20 +60,21 @@ class Grid extends Component {
 
     return (
       <Animation type="bounceInRight">
-      <div className="card-view">
-      <ul 
-      style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}} className="one-card">
-        {repos.map(({ name, owner, stargazers_count, html_url }) => (
-          <li key={name} className="lang-card">
-            <ul>
-              <li><a href={html_url} target="_blank">{name}</a></li>
-              <li className="owner">@{owner.login}</li>
-              <li className="stars">{stargazers_count} stars</li>
-            </ul>
-          </li>
-        ))}
-      </ul>
-      </div>
+
+        <div className="card-view">
+          <ul 
+          style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}} className="one-card">
+            {repos.map(({ name, owner, stargazers_count, html_url }) => (
+              <li key={name} className="lang-card">
+                <ul>
+                  <li><a href={html_url} target="_blank">{name}</a></li>
+                  <li className="owner">@{owner.login}</li>
+                  <li className="stars">{stargazers_count} stars</li>
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       
       </Animation>
     )

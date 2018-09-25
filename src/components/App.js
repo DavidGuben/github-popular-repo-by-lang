@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import routes from './routes'
-import { Route, Switch } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import routes from './routes';
 
-import Navbar from './Navbar'
-import NoMatch from './NoMatch'
+import Navbar from './Navbar';
+import NoMatch from './NoMatch';
 
 class App extends Component {
   render() {
